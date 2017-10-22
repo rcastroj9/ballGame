@@ -44,7 +44,7 @@ int* Player::giveMove(){
 //initalizes the number of moves the player has : 0
 Player::Player(int xCor, int yCor){
   this->moves = 0;
-  this->ball = Ball(xCor, yCor);
+  this->ball = new Ball(xCor, yCor);
 }
 
 Player::Player(Ball newBall){
