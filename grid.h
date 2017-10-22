@@ -1,3 +1,5 @@
+#ifndef GRID
+#define GRID
 #include "player.h"
 #include "ball.h"
 
@@ -13,3 +15,5 @@ public:
   void startGame();
   Grid(int size, Ball[] balls, Player[] players);
 };
+
+#endif

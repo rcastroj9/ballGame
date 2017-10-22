@@ -1,5 +1,7 @@
 #include "player.h"
 #include "ball.h"
+#include <iostream>
+
  using namespace std;
 //instruct the ball to move
 void Player::move(int xCor, int yCor){

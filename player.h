@@ -1,3 +1,5 @@
+#ifndef PLAYER
+#define PLAYER
 #include "ball.h"
 
 class Player{
@@ -12,3 +14,5 @@ public:
                               // its own attribute
 
 };
+
+#endif
