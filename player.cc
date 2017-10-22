@@ -45,6 +45,6 @@ int* Player::giveMove(){
 Player::Player(int xCor, int yCor):ball(Ball(xCor, yCor)), moves(0){
 }
 
-Player::Player(Ball newBall) ball(newBall){
+Player::Player(Ball newBall):ball(newBall), moves(0){
 
 }
