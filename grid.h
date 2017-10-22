@@ -11,5 +11,5 @@ public:
   Player nextPlayer();
   bool validMove(int xCor, int yCor);
   void startGame();
-  Grid Grid(int size, Ball[] balls, Player[] players);
-}
+  Grid(int size, Ball[] balls, Player[] players);
+};

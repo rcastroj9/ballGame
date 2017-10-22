@@ -1,6 +1,6 @@
 #include "player.h"
 #include "ball.h"
-
+ using namespace std;
 //instruct the ball to move
 void Player::move(int xCor, int yCor){
   ball.move(xCor, yCor);
