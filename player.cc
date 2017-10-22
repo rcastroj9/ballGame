@@ -18,12 +18,12 @@ int Player::getMoves(){
 //check if the move is valid
 //get current position
 //pass inteded move to grid
-int[] Player::giveMove(){
+int* Player::giveMove(){
   int pos;
   cout << "Where do you want to move? (It has to be between 1 and 4)" << endl;
   cin  >> pos;
   if (1 <= pos && pos <= 4){
-    int posArr[2] = ball.givePos();
+    int *posArr = ball.givePos();
     if(pos == 1){
       posArr[0]--;
     }else if(pos == 2){

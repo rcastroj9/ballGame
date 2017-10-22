@@ -1,7 +1,9 @@
 #include "ball.h"
 
-  int[] Ball::givePos(){
-    int pos[2] = {this->x, this->y};
+  int* Ball::givePos(){
+    int *pos = new int[2];
+    pos[0] = this->x;
+    pos[1] = this->y;
     return pos;
   }
 
