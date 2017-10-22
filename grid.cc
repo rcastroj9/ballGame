@@ -37,7 +37,7 @@ void Grid::startGame(){
     //get the player whos next
     Player player = nextPlayer();
     //get the move she wants to do
-    int[] move = player.giveMove();
+    int *move = player.giveMove();
     //check if valid
     bool valid = validMove(move[0], move[1]);
     //tell player it can move ball, player tells ball to update
@@ -49,7 +49,7 @@ void Grid::startGame(){
 
 }
 
-Grid::Grid(int size, Ball[] balls, Player[] players);
+Grid::Grid(int size, Ball *balls, Player *players);
   this->currentPlayer = 0;
   this->balls = balls;
   this->players = players;
