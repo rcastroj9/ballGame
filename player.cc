@@ -43,8 +43,9 @@ int* Player::giveMove(){
 //constructor that creates a ball for the Player at xCor and yCor
 //initalizes the number of moves the player has : 0
 Player::Player(int xCor, int yCor){
+  Ball newBall = new Ball(xCor, yCor);
   this->moves = 0;
-  this->ball = new Ball(xCor, yCor);
+  this->ball = newBall;
 }
 
 Player::Player(Ball newBall){
