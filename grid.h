@@ -9,7 +9,7 @@ class Grid{
   Player *players;
   int currentPlayer;
 public:
-  void checkWin();
+  bool checkWin();
   Player nextPlayer();
   bool validMove(int xCor, int yCor);
   void startGame();

@@ -50,7 +50,7 @@ void Grid::startGame(){
 
 }
 
-Grid::Grid(int size, Ball *balls, Player *players);
+Grid::Grid(int size, Ball *balls, Player *players){
   this->currentPlayer = 0;
   this->balls = balls;
   this->players = players;
