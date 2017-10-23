@@ -1,5 +1,6 @@
 #include "player.h"
 #include "ball.h"
+#include "grid.h"
 
 //checks if any of the players has won
 bool Grid::checkWin(){
