@@ -2,10 +2,12 @@
 #include "ball.h"
 #include "grid.h"
 
+using namespace std;
+
 //checks if any of the players has won
 bool Grid::checkWin(){
   for (int i = 0; i < 2; i++) {
-    if(player[i].getMoves() == 50){
+    if(players[i].getMoves() == 50){
       cout << "Congrats Player" << i++;
       return true;
     }
